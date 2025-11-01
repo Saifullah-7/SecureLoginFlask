@@ -1,0 +1,24 @@
+/* Custom Styles for AuthApp */
+
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: 960px;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: #343a40;
+}
+
+.alert {
+  margin-top: 1rem;
+}

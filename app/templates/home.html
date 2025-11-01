@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% block title %}Home{% endblock %} {% block content
+%}
+<div class="text-center mt-5">
+  <h1 class="display-4">Welcome to AuthApp</h1>
+  <p class="lead">
+    A secure and responsive authentication system built with Flask and
+    Bootstrap.
+  </p>
+
+  {% if not current_user.is_authenticated %}
+  <div class="mt-4">
+    <a href="{{ url_for('auth.login') }}" class="btn btn-primary me-2">Login</a>
+    <a href="{{ url_for('auth.signup') }}" class="btn btn-success">Sign Up</a>
+  </div>
+  {% else %}
+  <div class="mt-4">
+    <a href="{{ url_for('main.dashboard') }}" class="btn btn-outline-info"
+      >Go to Dashboard</a
+    >
+  </div>
+  {% endif %}
+</div>
+{% endblock %}
